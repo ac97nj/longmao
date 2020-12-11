@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>龙猫</title>
+</head>
+<body>
+<style id="demo2"></style>
+<div id="demo"></div>
+<div id="buttons">
+    <button id="btnPause">暂停</button>
+    <button id="btnPlay">播放</button>
+    <button id="btnSlow">慢速</button>
+    <button id="btnNormal">中速</button>
+    <button id="btnFast">快速</button>
+</div>
+<style>
+  * {box-sizing: border-box;}
+  *::before, *::after {box-sizing: border-box;}
+  #buttons {
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    margin-right: 10px;
+  }
+  #buttons > button {
+    margin-bottom: 10px;
+    padding: 4px 8px;
+  }
+  #demo2 {
+    display: none;
+  }
+  #demo {
+    position: fixed;
+    height: 50vh;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow-y: auto;
+  }
+  #demo::-webkit-scrollbar {
+    display: none;
+  }
+  #html {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 50vh;
+    background: #e1e7d3;
+  }
+</style>
+<div id="html">
+    <div class="wrap">
+        <div class="base  head"></div>
+        <div class="base  middleOne"></div>
+        <div class="base  middleTwo">
+            <div class="ma">
+                <div class="mark  mak1"></div>
+                <div class="mark  mak2"></div>
+                <div class="mark  mak3"></div>
+                <div class="mark  mak4"></div>
+                <div class="mark  mak5"></div>
+                <div class="mark  mak6"></div>
+                <div class="mark  mak7"></div>
+            </div>
+        </div>
+        <div class="base  bodyOne"></div>
+        <div class="base  nose"></div>
+        <div class="base  eye eyeLeft">
+            <div class="  eye1"></div>
+        </div>
+        <div class="base  eye eyeRight">
+            <div class="  eye1"></div>
+        </div>
+        <div class=" eye2"></div>
+        <div class="base  arm  armLeft "></div>
+        <div class="base  arm  armRight "></div>
+        <div class="base arm armOne"></div>
+        <div class="base arm armTwo"></div>
+        <div class="base  earLeft"></div>
+        <div class="base  earRight"></div>
+        <div class="base    earOne"></div>
+        <div class="base    earTwo"></div>
+        <div class="trim"></div>
+        <div class="trim2"></div>
+    </div>
+</div>
+<script src="test.js"></script>
+</body>
+</html>
